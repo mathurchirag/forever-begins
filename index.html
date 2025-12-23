@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag & Yogita Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Design yaha start hota hai */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Container ab bada hoga (Do hisso ke liye) */
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            max-width: 900px; /* Chaudaai badha di */
+            width: 90%;
+            margin: 20px;
+            display: flex; /* Flexbox side-by-side ke liye */
+            overflow: hidden; /* Photo ko corner se bahar nikalne se rokne ke liye */
+        }
+
+        /* Left Side: Buttons wala hissa */
+        .left-panel {
+            flex: 1; /* Aadha hissa */
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Right Side: Photo wala hissa */
+        .right-panel {
+            flex: 1; /* Baaki aadha hissa */
+            background-image: url('couple.jpg'); /* Yahan PHOTO ka naam aayega */
+            background-size: cover; /* Photo puri screen cover karegi */
+            background-position: center;
+            min-height: 400px;
+        }
+
+        /* Title Style */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #e91e63;
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-height: 400px; /* Agar list lambi ho toh scroll aa jaye */
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        /* Scrollbar styling for smoother look */
+        .menu::-webkit-scrollbar {
+            width: 5px;
+        }
+        .menu::-webkit-scrollbar-thumb {
+            background: #ddd; 
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            background-color: #fff;
+            border: 2px solid #e91e63;
+            color: #e91e63;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e91e63;
+            color: white;
+            transform: translateX(5px); /* Thoda right shift hoga hover par */
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        /* Mobile Responsive Code (Agar mobile par khula toh kya hoga) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse; /* Mobile par Photo upar, Menu niche */
+            }
+            .right-panel {
+                height: 250px; /* Mobile par photo choti height ki hogi */
+                width: 100%;
+            }
+            .left-panel {
+                padding: 2rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="left-panel">
+            <h1>Chirag ❤️ Yogita's Wedding</h1>
+            <p class="subtitle">Click on a function to view photos:</p>
+
+            <div class="menu">
+            <a href="https://drive.google.com/drive/folders/1zZs4UUlvD_Xx6u5tfDEf4lKm4lfdBKXF?usp=drive_link" class="btn">Laddu Papadiye</a>
+            
+            <a href="https://drive.google.com/drive/folders/1BA25jdVmJZ1KhGZxOqLWnG8vvPlNHX0K?usp=drive_link" class="btn">Vinayak</a>
+            
+            <a href="https://drive.google.com/drive/folders/1ima-OcTohWjQbXDUplXfp46i1gvwUPc3?usp=drive_link" class="btn">Haldi</a>
+            
+            <a href="https://drive.google.com/drive/folders/1jutOM3hPzKxxKFMNlDwnZB_T4JSyrXbe?usp=drive_link" class="btn">Palada</a>
+            
+            <a href="https://drive.google.com/drive/folders/159ymCFN47etVkA4MTeOSckZGCh6woGs1?usp=drive_link" class="btn">Mayra</a>
+            
+            <a href="https://drive.google.com/drive/folders/1u7ccqdT2BG4V-JnXaPo6plvystPrpf1U?usp=drive_link" class="btn">Barat</a>
+            
+            <a href="https://drive.google.com/drive/folders/1ZyYeLvEYweiT9vhvI2bYrqRahPdEhahD?usp=drive_link" class="btn">Varmala-Phere-Vidayi</a>
+            
+            <a href="https://drive.google.com/drive/folders/1maY784jmpXGv5przH8XwnyhoyRhLrpTB?usp=drive_link" class="btn">Welcome Home</a>
+            
+            <a href="https://drive.google.com/drive/folders/149R2-dRHqK7fVY6eXcq7QpXiLqkawSpx?usp=drive_link" class="btn">Reception</a>
+            </div>
+
+            <footer>
+                Developed by <strong>Chirag Mathur</strong>
+            </footer>
+        </div>
+
+        <div class="right-panel">
+            </div>
+
+    </div>
+
+</body>
+</html>
